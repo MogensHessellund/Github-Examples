@@ -9,7 +9,7 @@ jobs:
       fugl: gås
     steps:
       - name: "Hello World"
-        run:  echo "Hello $GITHUB_ACTOR og $MY_ACTION. $fisk $FUGL $HusDyr"
+        run:  echo "Hello $GITHUB_TOKEN $GITHUB_ACTOR og $MY_ACTION. $fisk $fugl $HusDyr"
         env:
           MY_ACTION: ${{ github.action }} 
           MY_ACTOR: ${{ github.actor }} 
