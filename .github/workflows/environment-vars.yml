@@ -1,0 +1,11 @@
+name: environment-vars
+on: [push]
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello World"
+        run:  echo "Hello  $MY-ACTOR and $MY-ACTION"
+        env:
+          MY-ACTION: ${{ github.action }} 
+          MY-ACTOR: ${{ github.actor }} 
