@@ -1,11 +1,16 @@
 name: environment-vars
 on: [push]
+env:
+  fisk: aborre
 jobs:
   hello-world:
     runs-on: ubuntu-latest
+    env:
+      fugl: gås
     steps:
       - name: "Hello World"
-        run:  echo "Hello $GITHUB_ACTOR og $MY_ACTION"
+        run:  echo "Hello $GITHUB_ACTOR og $MY_ACTION. $FISK $FUGL $HUSDYR"
         env:
           MY_ACTION: ${{ github.action }} 
           MY_ACTOR: ${{ github.actor }} 
+          husdyr: gris
