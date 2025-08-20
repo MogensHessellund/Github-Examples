@@ -14,4 +14,4 @@ jobs:
           MY_ACTION: ${{ github.action }} 
           MY_ACTOR: ${{ github.actor }} 
           HusDyr: gris
-          $GT: ${{ secrets.GITHUB_TOKEN }}
+          GT: ${{ secrets.GITHUB_TOKEN }}
